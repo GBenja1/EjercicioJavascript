@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos Form</title>
+</head>
+<body>
+    <h2>Ejemplo de formulario</h2>
+    <form name="datos" method="get" action="">
+        <label for="nom">Nombre:</label><br>
+        <input type="text" name="nom" id="nom" placeholder="Benjamin" required><!--placeholder coloca un texto y al precionar desaparece-->
+        <br><br>
+
+        <label for="ape">Apellido</label><br>
+        <input type="text" id="ape" placeholder="Gonzalez">
+        <br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="cachupin@duocuc.cl">
+        <br><br>
+
+        <label for="pass">Contraseña</label><br>
+        <input type="password" id="pass" name="pass" required>
+        <br><br>
+
+        <label for="fecha">Fecha de nacimiento</label><br>
+        <input type="date" id="fecha">
+        <br><br>
+
+        <label for="comuna">Comuna</label><br>
+        <select name="comuna" id="comuna" >
+            <option value="error">Selencione una comuna</option>
+            <option value="maipu">Maipú</option>
+            <option value="pudahuel">Pudahuel</option>
+            <option value="cerrillos">Cerrillos</option>
+            <option value="conchali">Conchalí</option>
+        </select>
+        <br><br>
+        <label>Seleccione comida:</label><br>
+        <input type="radio" id="pastas" name="comida" value="pastas">
+        <label for="pastas">Tallarines con salsa</label>
+        <br>
+        <input type="radio" id="vegano" name="comida" value="vegano">
+        <label for="vegano">Seitan con arroz</label>
+        <br>
+        <input type="radio" id="costillar" name="comida" value="costillar">
+        <label for="costillar">Costillar a las brasa</label>
+        <br><br>
+
+        <label id="opcion2">Seleccione deporte:</label><br>
+        <input type="checkbox" id="futbol" name="deporte1" vale="futbol">
+        <label for="futbol">Futbol</label>
+        <br>
+        
+        <input type="checkbox" id="nadar" name="deporte2" vale="nadar">
+        <label for="natacion">Natacion</label>
+        <br>
+        
+        <input type="checkbox" id="correr" name="deporte3" vale="correr">
+        <label for="correr">Corrida</label>
+        <br>
+
+        <input type="checkbox" id="voleyball" name="deporte4" vale="voleyball">
+        <label for="voleyball">Voleyball</label>
+        <br>
+        <br>
+        <label for="fecha">Seleccione una fecha</label><br>
+        <input type="date" id="fecha" name="fecha">
+
+        <br><br><br>
+        <input type="submit" value="Enviar">
+
+    </form>  
+    <br><br>
+    
+</body>
+</html>

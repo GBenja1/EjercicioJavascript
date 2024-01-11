@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body style="background-color:cadetblue;">
+    <div class="container" style="padding: 100px;">
+        <h2>Form con Bootstrap</h2>
+        <form action="formulario.html" method="post" name="datos">
+            <div class="form-goup">
+                <label for="nom">Nombre:</label>
+                <input type="text" id="nom" name="nom" class="form-control" minlength="3" placeholder="Benjamin" required>
+            </div>
+            
+            <div class="form-goup">
+                <label for="dir">Direccion:</label>
+                <input type="text" id="dir" name="dir" class="form-control" minlength="8" placeholder="Escriba su direccion:" required>
+            </div>
+            <div class="form-goup">
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="corre" class="form-control" placeholder="sucorreo@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="carrera">Carrera</label>
+                <select class="form-control">
+                    <option value="error">Selecciona una carrera</option>
+                    <option value="redes">Redes</option>
+                    <option value="info">Informatica</option>
+                    <option value="infra">Infraestructura</option>
+                </select>
+            </div>
+            <label for="peliculas">Seleccione peliculas:</label>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" value="titanic" id="peli1">
+                <label for="peli1" class="form-check-label">Titanic</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" value="endgame" id="peli2">
+                <label for="peli2" class="form-check-label">End Game</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" value="rapidoyfurioso" id="peli3">
+                <label for="peli3" class="form-check-label">Rapido y Furioso Infinito</label>
+            </div>
+            <br>
+            <!--checkbox en linea-->
+            <label for="vehiculos">Seleccione marca:</label><br>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-inline" value="nissan" id="auto1">
+                <label for="auto1" class="form-check-label">Nissan</label>
+            </div>
+            <div class="form-check form-check-inline">
+                
+                <input type="checkbox" class="form-check-inline" value="bmw" id="auto2">
+                <label for="auto2" class="form-check-label">BMW</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-inline" value="chevro" id="auto3">
+                <label for="auto3" class="form-check-label">Chevrolet</label>
+            </div>
+            <br><br>
+            <input type="submit" value="Enviar"class="btn btn-outline-dark btn-block"
+            >
+        </form>
+
+
+    </div>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
